@@ -1,0 +1,1 @@
+EPOXI-Q real generated image asset branch. Binary assets are committed via Git blob/tree API so the site can use actual raster photography rather than SVG/CSS placeholders.
