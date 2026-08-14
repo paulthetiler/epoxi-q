@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440" role="img" aria-label="Notched trowel spreading two-part resin bonding adhesive on a tile bed">
+  <defs>
+    <radialGradient id="pb-bg" cx="50%" cy="26%" r="80%"><stop offset="0%" stop-color="#2b2d31"/><stop offset="60%" stop-color="#121316"/><stop offset="100%" stop-color="#060708"/></radialGradient>
+    <linearGradient id="pb-bed" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3d3f43"/><stop offset="100%" stop-color="#17181b"/></linearGradient>
+    <linearGradient id="pb-trowel" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#9a9ea3"/><stop offset="30%" stop-color="#eef1f3"/><stop offset="60%" stop-color="#b4b8bd"/><stop offset="100%" stop-color="#5c5f64"/></linearGradient>
+    <linearGradient id="pb-handle" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#7c1410"/><stop offset="45%" stop-color="#e8331f"/><stop offset="100%" stop-color="#5c0f0c"/></linearGradient>
+    <linearGradient id="pb-ridge" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#6f7378"/><stop offset="100%" stop-color="#3a3d42"/></linearGradient>
+    <radialGradient id="pb-sh" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#000" stop-opacity=".7"/><stop offset="100%" stop-color="#000" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="640" height="440" fill="url(#pb-bg)"/>
+  <!-- substrate bed -->
+  <rect y="150" width="640" height="290" fill="url(#pb-bed)"/>
+  <ellipse cx="330" cy="420" rx="280" ry="24" fill="url(#pb-sh)"/>
+
+  <!-- combed adhesive ridges (grey resin) -->
+  <g>
+    <path d="M40 300 q20 -30 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0"
+          fill="none" stroke="url(#pb-ridge)" stroke-width="22" stroke-linecap="round"/>
+    <path d="M40 300 q20 -30 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0"
+          fill="none" stroke="#8b8e93" stroke-width="4" stroke-linecap="round" opacity=".5" transform="translate(0,-9)"/>
+  </g>
+
+  <!-- notched trowel spreading, at angle from top right -->
+  <g transform="translate(360,120) rotate(18)">
+    <!-- blade -->
+    <rect x="0" y="0" width="230" height="86" rx="6" fill="url(#pb-trowel)" stroke="#5c5f64" stroke-width="1.5"/>
+    <!-- notches on lower edge -->
+    <g fill="#0a0b0d">
+      <rect x="8" y="78" width="10" height="12"/><rect x="30" y="78" width="10" height="12"/><rect x="52" y="78" width="10" height="12"/>
+      <rect x="74" y="78" width="10" height="12"/><rect x="96" y="78" width="10" height="12"/><rect x="118" y="78" width="10" height="12"/>
+      <rect x="140" y="78" width="10" height="12"/><rect x="162" y="78" width="10" height="12"/><rect x="184" y="78" width="10" height="12"/>
+    </g>
+    <rect x="6" y="6" width="218" height="10" rx="4" fill="#fff" opacity=".4"/>
+    <!-- shank -->
+    <rect x="226" y="30" width="40" height="26" rx="6" fill="url(#pb-ridge)"/>
+    <!-- red handle -->
+    <rect x="262" y="18" width="120" height="50" rx="24" fill="url(#pb-handle)" stroke="#5c0f0c" stroke-width="2"/>
+    <rect x="278" y="28" width="80" height="10" rx="5" fill="#ff5a3c" opacity=".45"/>
+  </g>
+</svg>

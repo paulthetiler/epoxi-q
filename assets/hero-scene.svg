@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 900" width="960" height="900" role="img" aria-label="Two EPOXI-Q dual-cartridge resin grout products with a static mixing nozzle and a professional applicator gun on a dark studio floor">
+  <defs>
+    <!-- scene lighting -->
+    <radialGradient id="hs-glow" cx="62%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#2a2c30"/>
+      <stop offset="34%" stop-color="#141518"/>
+      <stop offset="70%" stop-color="#08090b"/>
+      <stop offset="100%" stop-color="#050506"/>
+    </radialGradient>
+    <linearGradient id="hs-floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#17181b"/>
+      <stop offset="40%" stop-color="#0c0d0f"/>
+      <stop offset="100%" stop-color="#050506"/>
+    </linearGradient>
+    <linearGradient id="hs-rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e9401f" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#f4471f" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#e9401f" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="hs-white-rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#fff" stop-opacity=".8"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- cylinder body: horizontal sheen -->
+    <linearGradient id="hs-body" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0a0b0d"/>
+      <stop offset="14%" stop-color="#303338"/>
+      <stop offset="30%" stop-color="#111316"/>
+      <stop offset="52%" stop-color="#05060700"/>
+      <stop offset="52%" stop-color="#050607"/>
+      <stop offset="74%" stop-color="#25282d"/>
+      <stop offset="100%" stop-color="#060708"/>
+    </linearGradient>
+    <linearGradient id="hs-body-v" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff" stop-opacity=".10"/>
+      <stop offset="12%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="88%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity=".55"/>
+    </linearGradient>
+    <linearGradient id="hs-metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6f7378"/>
+      <stop offset="18%" stop-color="#e8ebee"/>
+      <stop offset="34%" stop-color="#9a9ea3"/>
+      <stop offset="55%" stop-color="#c9ccd0"/>
+      <stop offset="78%" stop-color="#6a6d72"/>
+      <stop offset="100%" stop-color="#3d3f43"/>
+    </linearGradient>
+    <linearGradient id="hs-nozzle" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8f9297"/>
+      <stop offset="30%" stop-color="#f2f3f5"/>
+      <stop offset="55%" stop-color="#c2c5c9"/>
+      <stop offset="100%" stop-color="#6d7075"/>
+    </linearGradient>
+    <linearGradient id="hs-gun-body" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0a0b0c"/>
+      <stop offset="35%" stop-color="#2a2c30"/>
+      <stop offset="60%" stop-color="#101113"/>
+      <stop offset="100%" stop-color="#050506"/>
+    </linearGradient>
+    <linearGradient id="hs-gun-red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c1410"/>
+      <stop offset="40%" stop-color="#e8331f"/>
+      <stop offset="70%" stop-color="#c2261a"/>
+      <stop offset="100%" stop-color="#5c0f0c"/>
+    </linearGradient>
+    <radialGradient id="hs-shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000" stop-opacity=".85"/>
+      <stop offset="70%" stop-color="#000" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="hs-soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <filter id="hs-blur2"><feGaussianBlur stdDeviation="2.2"/></filter>
+  </defs>
+
+  <!-- backdrop -->
+  <rect width="960" height="900" fill="url(#hs-glow)"/>
+  <rect y="600" width="960" height="300" fill="url(#hs-floor)"/>
+  <!-- big ghost Q -->
+  <text x="700" y="470" font-family="Inter, Arial, sans-serif" font-weight="900" font-size="560" fill="#101215" opacity=".85" text-anchor="middle">Q</text>
+  <!-- rim light bars -->
+  <rect x="150" y="120" width="5" height="560" fill="url(#hs-white-rim)" filter="url(#hs-blur2)" opacity=".7"/>
+  <rect x="828" y="90" width="7" height="620" fill="url(#hs-rim)" filter="url(#hs-blur2)"/>
+  <rect x="880" y="150" width="4" height="470" fill="url(#hs-white-rim)" filter="url(#hs-blur2)" opacity=".5"/>
+
+  <!-- ground contact shadows -->
+  <ellipse cx="470" cy="726" rx="330" ry="46" fill="url(#hs-shadow)"/>
+  <ellipse cx="705" cy="690" rx="210" ry="34" fill="url(#hs-shadow)" opacity=".8"/>
+
+  <!-- ===================== APPLICATOR GUN (behind) ===================== -->
+  <g transform="translate(560,330) rotate(-7)">
+    <!-- rear cradle frame -->
+    <rect x="0" y="18" width="300" height="86" rx="20" fill="url(#hs-gun-body)" stroke="#3a3d42" stroke-width="2"/>
+    <rect x="16" y="34" width="250" height="54" rx="12" fill="#0a0b0c"/>
+    <!-- push rod -->
+    <rect x="250" y="52" width="150" height="16" rx="8" fill="url(#hs-metal)"/>
+    <circle cx="404" cy="60" r="16" fill="#26282c" stroke="#54575c" stroke-width="2"/>
+    <!-- red trigger handle -->
+    <path d="M70 100 L70 210 Q70 232 48 232 L20 232 Q-2 232 4 208 L40 104 Z" fill="url(#hs-gun-red)" stroke="#7c1410" stroke-width="2"/>
+    <path d="M104 100 L120 190 Q124 210 104 214 L92 214 Q80 214 82 196 L88 104 Z" fill="url(#hs-gun-red)" opacity=".92"/>
+    <rect x="30" y="118" width="60" height="8" rx="4" fill="#ff5a3c" opacity=".55"/>
+    <!-- front nose ring -->
+    <circle cx="8" cy="60" r="26" fill="none" stroke="url(#hs-metal)" stroke-width="8"/>
+  </g>
+
+  <!-- ===================== CARTRIDGE 2 : AN01 (right, slightly back) ===================== -->
+  <g transform="translate(560,250) scale(.96)">
+    <!-- static mixing nozzle -->
+    <g>
+      <path d="M60 -70 L100 -70 L92 -8 L68 -8 Z" fill="url(#hs-nozzle)" stroke="#5c5f64" stroke-width="1.5"/>
+      <path d="M96 -150 L104 -150 L100 -70 L86 -70 Z" fill="url(#hs-nozzle)" stroke="#5c5f64" stroke-width="1.4"/>
+      <path d="M96 -150 L104 -150 L103 -156 L96 -156 Z" fill="#e9edf0"/>
+      <path d="M88 -140 l14 0 M89 -122 l14 0 M90 -104 l14 0 M91 -86 l14 0" stroke="#77797d" stroke-width="1.3" opacity=".8"/>
+    </g>
+    <!-- collar -->
+    <rect x="52" y="-14" width="56" height="22" rx="5" fill="url(#hs-metal)"/>
+    <!-- body -->
+    <rect x="18" y="6" width="124" height="404" rx="16" fill="url(#hs-body)" stroke="#2c2f34" stroke-width="1.5"/>
+    <rect x="18" y="6" width="124" height="404" rx="16" fill="url(#hs-body-v)"/>
+    <!-- base plunger -->
+    <rect x="14" y="392" width="132" height="30" rx="8" fill="url(#hs-metal)"/>
+    <rect x="14" y="392" width="132" height="10" rx="5" fill="#fff" opacity=".25"/>
+    <!-- label -->
+    <rect x="26" y="70" width="108" height="286" rx="6" fill="#0d0e10" stroke="#333" stroke-width="1"/>
+    <text x="80" y="98" font-family="Inter, Arial, sans-serif" font-weight="900" font-size="18" fill="#fff" text-anchor="middle" letter-spacing="-1">EPOXI-<tspan fill="#f4471f">Q</tspan></text>
+    <text x="80" y="108" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="5" fill="#9a9ea3" text-anchor="middle" letter-spacing="1.4">PROFESSIONAL RESIN SYSTEMS</text>
+    <text x="80" y="140" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="21" fill="#fff" text-anchor="middle">GROUT</text>
+    <text x="80" y="153" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="6" fill="#9a9ea3" text-anchor="middle" letter-spacing="1">CARTRIDGE RESIN GROUT</text>
+    <rect x="34" y="164" width="92" height="34" fill="#000" stroke="#3a3d42"/>
+    <text x="42" y="184" font-family="Inter, Arial, sans-serif" font-weight="900" font-size="17" fill="#fff">AN01</text>
+    <text x="42" y="193" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="6" fill="#c9ccd0" letter-spacing="1">ANTHRACITE</text>
+    <g font-family="Inter, Arial, sans-serif" font-weight="500" font-size="7" fill="#c9ccd0">
+      <circle cx="40" cy="216" r="2" fill="#f4471f"/><text x="47" y="219">No mixing</text>
+      <circle cx="40" cy="232" r="2" fill="#f4471f"/><text x="47" y="235">Ready to use</text>
+      <circle cx="40" cy="248" r="2" fill="#f4471f"/><text x="47" y="251">Consistent colour</text>
+      <circle cx="40" cy="264" r="2" fill="#f4471f"/><text x="47" y="267">Stain &amp; water resistant</text>
+      <circle cx="40" cy="280" r="2" fill="#f4471f"/><text x="47" y="283">Interior &amp; exterior</text>
+    </g>
+    <text x="80" y="344" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="10" fill="#e8ebee" text-anchor="middle">400ml</text>
+    <!-- gloss highlight -->
+    <rect x="40" y="10" width="10" height="396" rx="5" fill="#fff" opacity=".14"/>
+  </g>
+
+  <!-- ===================== CARTRIDGE 1 : WG01 (front, hero) ===================== -->
+  <g transform="translate(320,230)">
+    <!-- static mixing nozzle -->
+    <g>
+      <path d="M62 -74 L108 -74 L98 -6 L72 -6 Z" fill="url(#hs-nozzle)" stroke="#5c5f64" stroke-width="1.6"/>
+      <path d="M104 -166 L114 -166 L108 -74 L92 -74 Z" fill="url(#hs-nozzle)" stroke="#5c5f64" stroke-width="1.5"/>
+      <path d="M104 -166 L114 -166 L113 -173 L104 -173 Z" fill="#eef1f3"/>
+      <path d="M94 -154 l16 0 M95 -132 l16 0 M96 -110 l16 0 M97 -88 l16 0" stroke="#77797d" stroke-width="1.5" opacity=".85"/>
+      <rect x="99" y="-166" width="4" height="92" fill="#fff" opacity=".35"/>
+    </g>
+    <!-- collar -->
+    <rect x="54" y="-10" width="64" height="24" rx="6" fill="url(#hs-metal)"/>
+    <rect x="54" y="-10" width="64" height="8" rx="4" fill="#fff" opacity=".3"/>
+    <!-- body -->
+    <rect x="14" y="12" width="144" height="452" rx="18" fill="url(#hs-body)" stroke="#2c2f34" stroke-width="1.6"/>
+    <rect x="14" y="12" width="144" height="452" rx="18" fill="url(#hs-body-v)"/>
+    <!-- base plunger -->
+    <rect x="10" y="444" width="152" height="34" rx="9" fill="url(#hs-metal)"/>
+    <rect x="10" y="444" width="152" height="11" rx="6" fill="#fff" opacity=".28"/>
+    <!-- label -->
+    <rect x="24" y="82" width="124" height="322" rx="7" fill="#0d0e10" stroke="#3a3d42" stroke-width="1"/>
+    <text x="86" y="114" font-family="Inter, Arial, sans-serif" font-weight="900" font-size="22" fill="#fff" text-anchor="middle" letter-spacing="-1">EPOXI-<tspan fill="#f4471f">Q</tspan></text>
+    <text x="86" y="125" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="5.6" fill="#9a9ea3" text-anchor="middle" letter-spacing="1.6">PROFESSIONAL RESIN SYSTEMS</text>
+    <text x="86" y="162" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="25" fill="#fff" text-anchor="middle">GROUT</text>
+    <text x="86" y="176" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="6.4" fill="#9a9ea3" text-anchor="middle" letter-spacing="1.1">CARTRIDGE RESIN GROUT</text>
+    <rect x="34" y="188" width="104" height="40" fill="#000" stroke="#3a3d42"/>
+    <text x="44" y="212" font-family="Inter, Arial, sans-serif" font-weight="900" font-size="20" fill="#fff">WG01</text>
+    <text x="44" y="222" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="6.4" fill="#c9ccd0" letter-spacing="1.2">WARM GREY</text>
+    <g font-family="Inter, Arial, sans-serif" font-weight="500" font-size="8" fill="#c9ccd0">
+      <circle cx="42" cy="248" r="2.2" fill="#f4471f"/><text x="50" y="251">No mixing</text>
+      <circle cx="42" cy="266" r="2.2" fill="#f4471f"/><text x="50" y="269">Ready to use</text>
+      <circle cx="42" cy="284" r="2.2" fill="#f4471f"/><text x="50" y="287">Consistent colour</text>
+      <circle cx="42" cy="302" r="2.2" fill="#f4471f"/><text x="50" y="305">Stain &amp; water resistant</text>
+      <circle cx="42" cy="320" r="2.2" fill="#f4471f"/><text x="50" y="323">Interior &amp; exterior</text>
+    </g>
+    <text x="86" y="388" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="12" fill="#e8ebee" text-anchor="middle">400ml</text>
+    <!-- gloss highlight -->
+    <rect x="30" y="16" width="12" height="444" rx="6" fill="#fff" opacity=".16"/>
+    <rect x="150" y="30" width="5" height="420" rx="3" fill="#000" opacity=".5"/>
+  </g>
+
+  <!-- floor reflections -->
+  <g opacity=".18" transform="translate(0,1454) scale(1,-1)">
+    <rect x="334" y="230" width="144" height="240" rx="18" fill="url(#hs-body)"/>
+    <rect x="578" y="256" width="124" height="200" rx="16" fill="url(#hs-body)"/>
+  </g>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440" role="img" aria-label="Chip and crack repair on a dark porcelain tile surface">
+  <defs>
+    <linearGradient id="pr-tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#33353a"/><stop offset="45%" stop-color="#1c1e22"/><stop offset="100%" stop-color="#0a0b0d"/>
+    </linearGradient>
+    <radialGradient id="pr-spot" cx="42%" cy="34%" r="60%"><stop offset="0%" stop-color="#4a4d53" stop-opacity=".7"/><stop offset="100%" stop-color="#4a4d53" stop-opacity="0"/></radialGradient>
+    <linearGradient id="pr-fill" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6d7075"/><stop offset="100%" stop-color="#3a3d42"/></linearGradient>
+    <filter id="pr-grain"><feTurbulence type="fractalNoise" baseFrequency="0.02 0.03" numOctaves="4" seed="11" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .35 0"/></filter>
+  </defs>
+  <rect width="640" height="440" fill="url(#pr-tile)"/>
+  <rect width="640" height="440" fill="url(#pr-spot)"/>
+  <rect width="640" height="440" filter="url(#pr-grain)"/>
+
+  <!-- main crack -->
+  <path d="M120 70 C180 150 210 180 250 240 C280 285 300 330 360 400" fill="none" stroke="#050506" stroke-width="6" stroke-linecap="round"/>
+  <path d="M120 70 C180 150 210 180 250 240 C280 285 300 330 360 400" fill="none" stroke="#6d7075" stroke-width="1.4" stroke-linecap="round" opacity=".6"/>
+  <!-- branches -->
+  <path d="M250 240 C300 250 340 240 400 210" fill="none" stroke="#050506" stroke-width="4" stroke-linecap="round"/>
+  <path d="M210 180 C170 210 150 250 130 300" fill="none" stroke="#050506" stroke-width="3" stroke-linecap="round"/>
+  <path d="M300 330 C350 330 420 350 470 330" fill="none" stroke="#050506" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- chip being repaired: resin fill, glossy, on the crack -->
+  <g transform="translate(300,300)">
+    <ellipse cx="0" cy="0" rx="70" ry="46" fill="#050506"/>
+    <ellipse cx="0" cy="0" rx="58" ry="36" fill="url(#pr-fill)"/>
+    <ellipse cx="-14" cy="-12" rx="22" ry="12" fill="#fff" opacity=".35"/>
+    <ellipse cx="0" cy="0" rx="58" ry="36" fill="none" stroke="#8b8e93" stroke-width="1" opacity=".5"/>
+  </g>
+
+  <!-- fine applicator tip entering from top-right -->
+  <g transform="translate(470,70) rotate(35)">
+    <path d="M0 0 L60 -14 L60 14 Z" fill="#2a2c30" stroke="#54575c" stroke-width="1.5"/>
+    <path d="M-2 -3 L-70 -6 L-70 6 L-2 3 Z" fill="#151619" stroke="#3a3d42" stroke-width="1.4"/>
+    <circle cx="2" cy="0" r="3" fill="#6d7075"/>
+  </g>
+  <!-- resin drop at tip -->
+  <circle cx="392" cy="168" r="6" fill="url(#pr-fill)"/>
+  <circle cx="390" cy="166" r="2" fill="#fff" opacity=".5"/>
+</svg>

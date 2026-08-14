@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="320" height="220" role="img" aria-label="SWATCH-WH01 stone colour swatch">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/><stop offset="55%" stop-color="#efece6"/><stop offset="100%" stop-color="#d8d4cc"/>
+    </linearGradient>
+    <filter id="stone">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014 0.022" numOctaves="5" seed="6" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.14 0" result="d"/>
+      <feComposite in="d" in2="SourceGraphic" operator="over"/>
+    </filter>
+    <filter id="veins">
+      <feTurbulence type="turbulence" baseFrequency="0.006 0.03" numOctaves="2" seed="11" result="v"/>
+      <feColorMatrix in="v" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0"/>
+    </filter>
+  </defs>
+  <rect width="320" height="220" fill="url(#g)"/>
+  <rect width="320" height="220" filter="url(#stone)" opacity="0.9"/>
+  <rect width="320" height="220" filter="url(#veins)"/>
+  <rect width="320" height="220" fill="#000" opacity="0.10" style="mix-blend-mode:multiply"/>
+  <rect x="0" y="0" width="320" height="70" fill="#fff" opacity="0.05"/>
+</svg>
