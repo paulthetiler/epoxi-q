@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="Black EPOXI-Q branded trade van in an industrial unit">
+  <defs>
+    <linearGradient id="v-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a1c1f"/><stop offset="55%" stop-color="#0d0e10"/><stop offset="100%" stop-color="#060708"/></linearGradient>
+    <linearGradient id="v-floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#141518"/><stop offset="100%" stop-color="#050506"/></linearGradient>
+    <linearGradient id="v-body" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2a2c30"/><stop offset="30%" stop-color="#141518"/><stop offset="70%" stop-color="#0a0b0c"/><stop offset="100%" stop-color="#050506"/></linearGradient>
+    <linearGradient id="v-glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4a5560"/><stop offset="60%" stop-color="#1c2228"/><stop offset="100%" stop-color="#0d1013"/></linearGradient>
+    <radialGradient id="v-tyre" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#2a2c30"/><stop offset="60%" stop-color="#0d0e10"/><stop offset="100%" stop-color="#050506"/></radialGradient>
+    <radialGradient id="v-hub" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#c9ccd0"/><stop offset="60%" stop-color="#6d7075"/><stop offset="100%" stop-color="#2a2c30"/></radialGradient>
+    <radialGradient id="v-sh" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#000" stop-opacity=".8"/><stop offset="100%" stop-color="#000" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="720" height="420" fill="url(#v-bg)"/>
+  <rect y="300" width="720" height="120" fill="url(#v-floor)"/>
+  <!-- warehouse light bars -->
+  <g opacity=".5"><rect x="90" y="30" width="140" height="7" rx="3" fill="#6d7075"/><rect x="320" y="30" width="140" height="7" rx="3" fill="#6d7075"/><rect x="550" y="30" width="90" height="7" rx="3" fill="#6d7075"/></g>
+  <ellipse cx="380" cy="356" rx="320" ry="30" fill="url(#v-sh)"/>
+
+  <!-- van body (side/three-quarter) -->
+  <g>
+    <!-- main box -->
+    <path d="M70 150 q0 -14 16 -14 L470 136 q40 0 66 26 l70 52 q14 10 14 26 l0 78 q0 12 -14 12 L86 330 q-16 0 -16 -14 Z" fill="url(#v-body)" stroke="#3a3d42" stroke-width="1.5"/>
+    <!-- cab windscreen -->
+    <path d="M470 150 q30 2 52 22 l44 40 l-92 0 Z" fill="url(#v-glass)"/>
+    <!-- door window -->
+    <rect x="486" y="196" width="86" height="40" rx="4" fill="url(#v-glass)"/>
+    <!-- side sliding-door seam -->
+    <rect x="210" y="150" width="2" height="176" fill="#000" opacity=".6"/>
+    <rect x="360" y="150" width="2" height="176" fill="#000" opacity=".6"/>
+    <!-- body gloss -->
+    <rect x="80" y="158" width="380" height="10" rx="5" fill="#fff" opacity=".12"/>
+    <!-- EPOXI-Q branding on the side -->
+    <text x="150" y="238" font-family="Inter, Arial, sans-serif" font-weight="900" font-size="52" fill="#fff" letter-spacing="-3">EPOXI-<tspan fill="#f4471f">Q</tspan></text>
+    <text x="152" y="262" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="12" fill="#9a9ea3" letter-spacing="4">PROFESSIONAL RESIN SYSTEMS</text>
+    <!-- red accent stripe -->
+    <rect x="86" y="300" width="360" height="6" fill="#f4471f" opacity=".9"/>
+    <!-- headlight -->
+    <path d="M600 250 l14 6 l0 16 l-14 4 Z" fill="#e8ebee" opacity=".8"/>
+  </g>
+  <!-- wheels -->
+  <g>
+    <circle cx="200" cy="336" r="42" fill="url(#v-tyre)" stroke="#000" stroke-width="3"/>
+    <circle cx="200" cy="336" r="20" fill="url(#v-hub)"/>
+    <circle cx="520" cy="336" r="42" fill="url(#v-tyre)" stroke="#000" stroke-width="3"/>
+    <circle cx="520" cy="336" r="20" fill="url(#v-hub)"/>
+  </g>
+</svg>

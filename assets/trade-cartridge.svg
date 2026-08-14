@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 460" width="420" height="460" role="img" aria-label="EPOXI-Q cartridge dispensing a bead of dark resin onto a surface">
+  <defs>
+    <radialGradient id="tc-bg" cx="60%" cy="30%" r="80%"><stop offset="0%" stop-color="#26282c"/><stop offset="60%" stop-color="#0f1012"/><stop offset="100%" stop-color="#060708"/></radialGradient>
+    <linearGradient id="tc-body" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#0a0b0d"/><stop offset="18%" stop-color="#34373c"/><stop offset="40%" stop-color="#121316"/><stop offset="60%" stop-color="#060708"/><stop offset="82%" stop-color="#282b30"/><stop offset="100%" stop-color="#070809"/></linearGradient>
+    <linearGradient id="tc-metal" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#6f7378"/><stop offset="25%" stop-color="#e8ebee"/><stop offset="55%" stop-color="#9a9ea3"/><stop offset="100%" stop-color="#3d3f43"/></linearGradient>
+    <linearGradient id="tc-noz" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8f9297"/><stop offset="35%" stop-color="#f2f3f5"/><stop offset="100%" stop-color="#5c5f64"/></linearGradient>
+    <linearGradient id="tc-resin" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2a2c30"/><stop offset="100%" stop-color="#050506"/></linearGradient>
+    <linearGradient id="tc-surface" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#26282c"/><stop offset="100%" stop-color="#101113"/></linearGradient>
+    <radialGradient id="tc-sh" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#000" stop-opacity=".7"/><stop offset="100%" stop-color="#000" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="420" height="460" fill="url(#tc-bg)"/>
+  <!-- surface at bottom -->
+  <rect y="380" width="420" height="80" fill="url(#tc-surface)"/>
+  <ellipse cx="210" cy="392" rx="150" ry="16" fill="url(#tc-sh)"/>
+
+  <!-- cartridge tilted, dispensing -->
+  <g transform="translate(150,40) rotate(28)">
+    <rect x="-4" y="0" width="120" height="250" rx="16" fill="url(#tc-body)" stroke="#2c2f34" stroke-width="1.5"/>
+    <rect x="-8" y="238" width="128" height="24" rx="7" fill="url(#tc-metal)"/>
+    <!-- collar + nozzle -->
+    <rect x="40" y="-18" width="40" height="20" rx="5" fill="url(#tc-metal)"/>
+    <path d="M46 -70 L74 -70 L70 -18 L50 -18 Z" fill="url(#tc-noz)" stroke="#5c5f64" stroke-width="1.5"/>
+    <path d="M50 -62 l20 0 M51 -46 l20 0 M52 -30 l20 0" stroke="#77797d" stroke-width="1.3"/>
+    <!-- label -->
+    <rect x="10" y="40" width="96" height="150" rx="5" fill="#0d0e10" stroke="#3a3d42"/>
+    <text x="58" y="66" font-family="Inter, Arial, sans-serif" font-weight="900" font-size="15" fill="#fff" text-anchor="middle" letter-spacing="-1">EPOXI-<tspan fill="#f4471f">Q</tspan></text>
+    <text x="58" y="100" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="15" fill="#fff" text-anchor="middle">BOND</text>
+    <text x="58" y="112" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="5.4" fill="#9a9ea3" text-anchor="middle" letter-spacing="1">TWO-PART RESIN</text>
+    <rect x="24" y="122" width="68" height="10" fill="#f4471f" opacity=".85"/>
+    <rect x="16" y="44" width="8" height="142" rx="4" fill="#fff" opacity=".14"/>
+  </g>
+
+  <!-- resin bead pouring to surface -->
+  <path d="M232 150 C246 210 250 270 244 330 C242 356 240 372 232 384" fill="none" stroke="url(#tc-resin)" stroke-width="12" stroke-linecap="round"/>
+  <ellipse cx="230" cy="384" rx="46" ry="12" fill="url(#tc-resin)"/>
+  <ellipse cx="220" cy="380" rx="12" ry="3" fill="#4a4d53" opacity=".7"/>
+</svg>

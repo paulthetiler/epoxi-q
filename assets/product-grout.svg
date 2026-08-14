@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440" role="img" aria-label="EPOXI-Q cartridge resin grout product">
+  <defs>
+    <radialGradient id="pg-bg" cx="50%" cy="34%" r="72%">
+      <stop offset="0%" stop-color="#33363b"/><stop offset="45%" stop-color="#131417"/><stop offset="100%" stop-color="#060708"/>
+    </radialGradient>
+    <linearGradient id="pg-body" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0a0b0d"/><stop offset="16%" stop-color="#34373c"/><stop offset="34%" stop-color="#121316"/>
+      <stop offset="52%" stop-color="#060708"/><stop offset="74%" stop-color="#282b30"/><stop offset="100%" stop-color="#070809"/>
+    </linearGradient>
+    <linearGradient id="pg-metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6f7378"/><stop offset="22%" stop-color="#e8ebee"/><stop offset="50%" stop-color="#a4a8ad"/><stop offset="80%" stop-color="#5c5f64"/><stop offset="100%" stop-color="#3d3f43"/>
+    </linearGradient>
+    <linearGradient id="pg-noz" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8f9297"/><stop offset="35%" stop-color="#f2f3f5"/><stop offset="100%" stop-color="#6d7075"/>
+    </linearGradient>
+    <radialGradient id="pg-sh" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#000" stop-opacity=".8"/><stop offset="100%" stop-color="#000" stop-opacity="0"/></radialGradient>
+    <linearGradient id="pg-rim" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f4471f" stop-opacity="0"/><stop offset="50%" stop-color="#f4471f"/><stop offset="100%" stop-color="#f4471f" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect width="640" height="440" fill="url(#pg-bg)"/>
+  <text x="470" y="330" font-family="Inter, Arial, sans-serif" font-weight="900" font-size="360" fill="#0f1114" opacity=".8" text-anchor="middle">Q</text>
+  <rect x="565" y="60" width="5" height="300" fill="url(#pg-rim)" opacity=".8"/>
+  <ellipse cx="290" cy="392" rx="200" ry="30" fill="url(#pg-sh)"/>
+
+  <!-- cartridge -->
+  <g transform="translate(215,70)">
+    <path d="M42 -40 L74 -40 L67 4 L49 4 Z" fill="url(#pg-noz)" stroke="#5c5f64" stroke-width="1.4"/>
+    <path d="M70 -110 L80 -110 L74 -40 L60 -40 Z" fill="url(#pg-noz)" stroke="#5c5f64" stroke-width="1.4"/>
+    <path d="M64 -100 l14 0 M65 -82 l14 0 M66 -64 l14 0" stroke="#77797d" stroke-width="1.3"/>
+    <rect x="36" y="0" width="52" height="18" rx="5" fill="url(#pg-metal)"/>
+    <rect x="8" y="16" width="108" height="300" rx="14" fill="url(#pg-body)" stroke="#2c2f34" stroke-width="1.4"/>
+    <rect x="6" y="300" width="112" height="24" rx="7" fill="url(#pg-metal)"/>
+    <rect x="16" y="60" width="92" height="220" rx="5" fill="#0d0e10" stroke="#3a3d42"/>
+    <text x="62" y="86" font-family="Inter, Arial, sans-serif" font-weight="900" font-size="17" fill="#fff" text-anchor="middle" letter-spacing="-1">EPOXI-<tspan fill="#f4471f">Q</tspan></text>
+    <text x="62" y="120" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="20" fill="#fff" text-anchor="middle">GROUT</text>
+    <text x="62" y="132" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="6" fill="#9a9ea3" text-anchor="middle" letter-spacing="1">CARTRIDGE RESIN GROUT</text>
+    <rect x="24" y="144" width="76" height="30" fill="#000" stroke="#3a3d42"/>
+    <text x="31" y="164" font-family="Inter, Arial, sans-serif" font-weight="900" font-size="15" fill="#fff">WG01</text>
+    <g font-family="Inter, Arial, sans-serif" font-weight="500" font-size="7" fill="#c9ccd0">
+      <circle cx="30" cy="192" r="1.8" fill="#f4471f"/><text x="36" y="195">No mixing</text>
+      <circle cx="30" cy="208" r="1.8" fill="#f4471f"/><text x="36" y="211">Ready to use</text>
+      <circle cx="30" cy="224" r="1.8" fill="#f4471f"/><text x="36" y="227">Consistent colour</text>
+    </g>
+    <text x="62" y="266" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="9" fill="#e8ebee" text-anchor="middle">400ml</text>
+    <rect x="20" y="20" width="9" height="290" rx="4" fill="#fff" opacity=".15"/>
+  </g>
+</svg>
