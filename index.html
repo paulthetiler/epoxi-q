@@ -11,15 +11,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/polish.css">
+<script src="/site.js" defer></script>
 </head>
 <body>
 <header id="top">
   <a class="brand" href="#top" aria-label="EPOXI-Q home">EPOXI-<b>Q</b><small>PROFESSIONAL RESIN SYSTEMS</small></a>
-  <nav>
+  <nav aria-label="Primary navigation">
     <a href="#top" class="active">Home</a><a href="#products">Products</a><a href="#colours">Colours</a><a href="#technical">Technical</a><a href="#trade">Trade</a><a href="#about">About</a><a href="#contact">Contact</a>
   </nav>
-  <a class="trade-btn" href="#contact">TRADE ENQUIRY <span>&rarr;</span></a>
+  <a class="trade-btn" href="mailto:hello@epoxi-q.co.uk?subject=EPOXI-Q%20Trade%20Enquiry">TRADE ENQUIRY <span>&rarr;</span></a>
+  <button class="mobile-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span></button>
 </header>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+  <a href="#products">Products</a>
+  <a href="#colours">Colours</a>
+  <a href="#technical">Technical</a>
+  <a href="#trade">Trade</a>
+  <a href="#about">About</a>
+  <a href="mailto:hello@epoxi-q.co.uk?subject=EPOXI-Q%20Trade%20Enquiry">Trade enquiry</a>
+</nav>
 <main>
   <section class="hero">
     <div class="hero-copy">
@@ -40,20 +51,14 @@
       </ul>
     </div>
     <div class="hero-stage">
-      <img
-        src="/assets/final/hero-products.png"
-        alt="EPOXI-Q branded grout cartridges with mixing nozzle and applicator gun"
-        width="1536"
-        height="1024"
-        decoding="async"
-        fetchpriority="high">
+      <img src="/assets/final/hero-products.png" alt="EPOXI-Q branded grout cartridges with mixing nozzle and applicator gun" width="1536" height="1024" decoding="async" fetchpriority="high">
     </div>
   </section>
 
   <section id="colours" class="colours">
     <div class="section-head">
       <h2><span>COLOUR RANGE</span><i class="dash"></i><small>Our initial range. More colours coming soon.</small></h2>
-      <a class="pill" href="#contact">VIEW FULL RANGE <span>&rarr;</span></a>
+      <a class="pill" href="#colours" aria-disabled="true">FULL RANGE</a>
     </div>
     <div class="swatch-row">
       <figure><img src="/assets/swatch-wh01.svg" alt="WH01 Bright White swatch"><figcaption><b>WH01</b><small>BRIGHT WHITE</small></figcaption></figure>
@@ -70,44 +75,20 @@
     </div>
     <div class="product-grid">
       <article class="product active">
-        <div class="product-media">
-          <img src="/assets/final/grout-cartridge.png" alt="EPOXI-Q grout cartridge product shot" width="1536" height="1024" loading="lazy" decoding="async">
-        </div>
-        <div class="product-body">
-          <h3>GROUT</h3>
-          <p>Cartridge resin grout. No mixing. Consistent results.</p>
-          <a href="#contact">VIEW PRODUCT <span>&rarr;</span></a>
-        </div>
+        <div class="product-media"><img src="/assets/final/grout-cartridge.png" alt="EPOXI-Q grout cartridge product shot" width="1536" height="1024" loading="lazy" decoding="async"></div>
+        <div class="product-body"><h3>GROUT</h3><p>Cartridge resin grout. No mixing. Consistent results.</p><a href="#products" aria-disabled="true">VIEW PRODUCT</a></div>
       </article>
       <article class="product">
-        <div class="product-media">
-          <img src="/assets/final/mitre-closeup.png" alt="Porcelain mitre close-up" width="1536" height="1024" loading="lazy" decoding="async">
-        </div>
-        <div class="product-body">
-          <h3>MITRE</h3>
-          <p>Specialist resin for mitred edges and joints.</p>
-          <a href="#contact">VIEW PRODUCT <span>&rarr;</span></a>
-        </div>
+        <div class="product-media"><img src="/assets/final/mitre-closeup.png" alt="Porcelain mitre close-up" width="1536" height="1024" loading="lazy" decoding="async"></div>
+        <div class="product-body"><h3>MITRE</h3><p>Specialist resin for mitred edges and joints.</p><a href="#products" aria-disabled="true">VIEW PRODUCT</a></div>
       </article>
       <article class="product">
-        <div class="product-media">
-          <img src="/assets/final/repair-closeup.png" alt="Porcelain and stone repair close-up" width="1536" height="1024" loading="lazy" decoding="async">
-        </div>
-        <div class="product-body">
-          <h3>REPAIR</h3>
-          <p>Resin solutions for chip, crack and surface repairs.</p>
-          <a href="#contact">VIEW PRODUCT <span>&rarr;</span></a>
-        </div>
+        <div class="product-media"><img src="/assets/final/repair-closeup.png" alt="Porcelain and stone repair close-up" width="1536" height="1024" loading="lazy" decoding="async"></div>
+        <div class="product-body"><h3>REPAIR</h3><p>Resin solutions for chip, crack and surface repairs.</p><a href="#products" aria-disabled="true">VIEW PRODUCT</a></div>
       </article>
       <article class="product">
-        <div class="product-media">
-          <img src="/assets/final/bond-cartridge.png" alt="EPOXI-Q two-part BOND resin cartridge" width="1536" height="1024" loading="lazy" decoding="async">
-        </div>
-        <div class="product-body">
-          <h3>BOND</h3>
-          <p>High performance resin adhesives and bonding.</p>
-          <a href="#contact">VIEW PRODUCT <span>&rarr;</span></a>
-        </div>
+        <div class="product-media"><img src="/assets/final/bond-cartridge.png" alt="EPOXI-Q two-part BOND resin cartridge" width="1536" height="1024" loading="lazy" decoding="async"></div>
+        <div class="product-body"><h3>BOND</h3><p>High performance resin adhesives and bonding.</p><a href="#products" aria-disabled="true">VIEW PRODUCT</a></div>
       </article>
     </div>
   </section>
@@ -116,79 +97,43 @@
     <div class="why-copy">
       <h2>WHY CHOOSE<br>EPOXI-<b>Q</b>?</h2>
       <p>Engineered for professional tilers and contractors who demand reliability, consistency and a finish that lasts.</p>
-      <ul class="ticks">
-        <li>Easy to apply</li>
-        <li>Professional finish</li>
-        <li>UV resistant (colour stable)</li>
-        <li>Chemical resistant</li>
-        <li>Ideal for wet areas</li>
-        <li>Consistent results</li>
-      </ul>
+      <ul class="ticks"><li>Easy to apply</li><li>Professional finish</li><li>UV resistant (colour stable)</li><li>Chemical resistant</li><li>Ideal for wet areas</li><li>Consistent results</li></ul>
       <a class="btn ghost small" href="#technical">MORE INFO</a>
     </div>
-    <div class="why-media">
-      <img
-        src="/assets/final/application-joint.png"
-        alt="EPOXI-Q cartridge applying resin into a tile joint"
-        width="1536"
-        height="1024"
-        loading="lazy"
-        decoding="async">
-    </div>
-    <blockquote class="why-quote">
-      <span class="mark">&ldquo;</span>
-      <p>Finally, a resin system that&rsquo;s actually built for the trade.</p>
-      <cite>&mdash; PROFESSIONAL TILER</cite>
-    </blockquote>
+    <div class="why-media"><img src="/assets/final/application-joint.png" alt="EPOXI-Q cartridge applying resin into a tile joint" width="1536" height="1024" loading="lazy" decoding="async"></div>
+    <aside class="brand-proof">
+      <span class="proof-kicker">BUILT FOR THE TRADE</span>
+      <p>Professional resin systems designed around cleaner application, repeatable results and a finish that holds up.</p>
+      <small>No invented reviews. Product claims and final specifications remain subject to validation before launch.</small>
+    </aside>
   </section>
 
   <section id="trade" class="trade">
-    <div class="trade-van">
-      <img
-        src="/assets/final/trade-van.png"
-        alt="Black EPOXI-Q branded trade van"
-        width="1536"
-        height="1024"
-        loading="lazy"
-        decoding="async">
-    </div>
-    <div class="trade-copy">
-      <h2>TRADE <b>FOCUSED.</b></h2>
-      <p>Products developed for professional tilers, contractors and merchants.</p>
-      <a class="btn red" href="#contact">JOIN THE TRADE LIST <span>&rarr;</span></a>
-    </div>
-    <ul class="trade-list">
-      <li>Early access to new products</li>
-      <li>Technical support</li>
-      <li>Product updates</li>
-      <li>Trade pricing</li>
-    </ul>
+    <div class="trade-van"><img src="/assets/final/trade-van.png" alt="Black EPOXI-Q branded trade van" width="1536" height="1024" loading="lazy" decoding="async"></div>
+    <div class="trade-copy"><h2>TRADE <b>FOCUSED.</b></h2><p>Products developed for professional tilers, contractors and merchants.</p><a class="btn red" href="mailto:hello@epoxi-q.co.uk?subject=Join%20the%20EPOXI-Q%20Trade%20List">JOIN THE TRADE LIST <span>&rarr;</span></a></div>
+    <ul class="trade-list"><li>Early access to new products</li><li>Technical support</li><li>Product updates</li><li>Trade pricing</li></ul>
   </section>
 
   <section id="technical" class="technical">
-    <div class="section-head">
-      <h2><span>TECHNICAL &amp; SUPPORT</span><i class="dash"></i><small>All the info you need, when you need it.</small></h2>
-    </div>
+    <div class="section-head"><h2><span>TECHNICAL &amp; SUPPORT</span><i class="dash"></i><small>All the info you need, when you need it.</small></h2></div>
     <div class="tech-grid">
       <div class="tech-cards">
-        <a class="tech-card" href="#contact"><b>TECHNICAL DATA</b><small>TDS &amp; MSDS</small></a>
-        <a class="tech-card" href="#contact"><b>APPLICATION GUIDE</b><small>Step by step</small></a>
-        <a class="tech-card" href="#contact"><b>FAQ</b><small>Common questions</small></a>
-        <a class="tech-card" href="#contact"><b>CONTACT</b><small>Get in touch</small></a>
+        <a class="tech-card" href="#technical" aria-disabled="true"><b>TECHNICAL DATA</b><small>TDS &amp; MSDS</small></a>
+        <a class="tech-card" href="#technical" aria-disabled="true"><b>APPLICATION GUIDE</b><small>Step by step</small></a>
+        <a class="tech-card" href="#technical" aria-disabled="true"><b>FAQ</b><small>Common questions</small></a>
+        <a class="tech-card" href="mailto:hello@epoxi-q.co.uk"><b>CONTACT</b><small>Get in touch</small></a>
       </div>
       <aside class="dev-note" id="contact">
         <b>Currently in development.</b>
         <p>Product specifications and final colour range subject to validation.</p>
-        <a class="btn light" href="mailto:hello@epoxi-q.co.uk">NOTIFY ME <span>&rarr;</span></a>
+        <a class="btn light" href="mailto:hello@epoxi-q.co.uk?subject=EPOXI-Q%20Launch%20Updates">NOTIFY ME <span>&rarr;</span></a>
       </aside>
     </div>
   </section>
 </main>
 <footer class="site-footer">
   <a class="brand" href="#top">EPOXI-<b>Q</b><small>PROFESSIONAL RESIN SYSTEMS</small></a>
-  <nav class="foot-nav">
-    <a href="#top">Home</a><a href="#products">Products</a><a href="#colours">Colours</a><a href="#technical">Technical</a><a href="#trade">Trade</a><a href="#about">About</a><a href="#contact">Contact</a>
-  </nav>
+  <nav class="foot-nav"><a href="#top">Home</a><a href="#products">Products</a><a href="#colours">Colours</a><a href="#technical">Technical</a><a href="#trade">Trade</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
   <div class="foot-meta"><span>&copy; 2026 EPOXI-Q. All rights reserved.<br>Built for the trade.</span></div>
 </footer>
 </body>
