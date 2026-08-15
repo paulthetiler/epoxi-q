@@ -71,16 +71,13 @@ header nav a.active::after{content:"";position:absolute;left:0;right:0;bottom:-2
 
 /* ============================ HERO ============================ */
 .hero{
-  position:relative;display:grid;grid-template-columns:44% 56%;align-items:center;
-  min-height:660px;overflow:hidden;
+  position:relative;display:grid;grid-template-columns:minmax(320px,42%) minmax(0,58%);
+  align-items:stretch;min-height:min(88vh,760px);overflow:hidden;
   background:
-    radial-gradient(120% 90% at 82% 42%,#242629 0,#0e0f12 42%,#050506 78%);
+    radial-gradient(90% 80% at 78% 48%,#1a1c1f 0%,#0c0d10 38%,#050506 78%);
   border-bottom:1px solid var(--line);
 }
-.hero::before{content:"";position:absolute;inset:0;pointer-events:none;
-  background:repeating-linear-gradient(90deg,transparent 0 23.5%,rgba(255,255,255,.02) 23.6% 23.8%);
-  mask-image:linear-gradient(90deg,transparent,#000 60%);}
-.hero-copy{position:relative;z-index:2;padding:64px var(--edge)}
+.hero-copy{position:relative;z-index:2;padding:64px var(--edge);display:flex;flex-direction:column;justify-content:center}
 .hero-mark{font-size:clamp(3.4rem,6vw,6rem);font-weight:900;letter-spacing:-.085em;line-height:.84;text-shadow:0 20px 50px #000}
 .hero-mark b{color:var(--red)}
 .eyebrow{display:block;margin-top:10px;font-size:.7rem;font-weight:600;letter-spacing:.32em;color:var(--muted)}
@@ -95,9 +92,11 @@ header nav a.active::after{content:"";position:absolute;left:0;right:0;bottom:-2
 .benefits svg{width:26px;height:26px;fill:none;stroke:var(--red);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .benefits b{font-size:.62rem;letter-spacing:.06em;line-height:1.3}
 .benefits small{color:var(--muted-2);font-size:.58rem;line-height:1.35}
-.hero-stage{position:relative;z-index:1;height:100%;display:flex;align-items:flex-end;justify-content:center}
-.hero-stage img{width:100%;height:100%;max-height:660px;object-fit:contain;object-position:bottom;
-  filter:drop-shadow(0 40px 60px rgba(0,0,0,.6))}
+.hero-stage{position:relative;z-index:1;min-height:520px;display:grid;place-items:center;padding:24px 2vw 18px 0}
+.hero-stage img{
+  width:100%;height:100%;max-height:720px;object-fit:contain;object-position:center;
+  filter:drop-shadow(0 36px 50px rgba(0,0,0,.72));
+}
 
 /* ============================ SECTION HEADS ============================ */
 .section-head{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:22px}
@@ -122,14 +121,14 @@ header nav a.active::after{content:"";position:absolute;left:0;right:0;bottom:-2
 /* ============================ PRODUCTS ============================ */
 .products{padding:40px var(--edge);border-bottom:1px solid var(--line)}
 .product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.product{position:relative;background:linear-gradient(160deg,#111315,#08090a);
+.product{position:relative;background:#08090a;
   border:1px solid var(--line);overflow:hidden;transition:.25s;display:flex;flex-direction:column}
 .product:hover{transform:translateY(-4px);border-color:#4a4d52;box-shadow:var(--shadow)}
 .product.active{border-color:var(--red);box-shadow:0 0 0 1px var(--red),0 24px 50px rgba(244,71,31,.14)}
-.product-media{aspect-ratio:16/11;overflow:hidden;background:#08090a}
-.product-media img{width:100%;height:100%;object-fit:cover;transition:.4s}
-.product:hover .product-media img{transform:scale(1.05)}
-.product-body{padding:18px 18px 22px}
+.product-media{aspect-ratio:4/3;overflow:hidden;background:#050506}
+.product-media img{width:100%;height:100%;object-fit:cover;object-position:center;transition:.45s}
+.product:hover .product-media img{transform:scale(1.04)}
+.product-body{padding:18px 18px 22px;background:linear-gradient(180deg,#101214,#08090a)}
 .product-body h3{font-size:1.4rem;font-weight:800}
 .product-body p{margin:6px 0 16px;font-size:.72rem;color:var(--muted);min-height:34px}
 .product-body a{font-size:.58rem;font-weight:800;letter-spacing:.09em;color:var(--red);display:inline-flex;gap:.5em;align-items:center}
@@ -147,8 +146,8 @@ header nav a.active::after{content:"";position:absolute;left:0;right:0;bottom:-2
   background:var(--red);
   -webkit-mask:no-repeat center/10px url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M9 16.2l-3.5-3.5L4 14.2 9 19l11-11-1.4-1.4z'/%3E%3C/svg%3E");
   mask:no-repeat center/10px url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M9 16.2l-3.5-3.5L4 14.2 9 19l11-11-1.4-1.4z'/%3E%3C/svg%3E");}
-.why-media{position:relative;overflow:hidden;background:#050506;min-height:360px}
-.why-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.why-media{position:relative;overflow:hidden;background:#050506;min-height:420px}
+.why-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
 .why-quote{position:relative;margin:0;padding:56px 34px;
   background:radial-gradient(120% 100% at 0 40%,#1c1e21,#0a0b0d 70%);
   display:flex;flex-direction:column;justify-content:center}
@@ -157,20 +156,19 @@ header nav a.active::after{content:"";position:absolute;left:0;right:0;bottom:-2
 .why-quote cite{margin-top:20px;font-style:normal;font-size:.58rem;font-weight:700;letter-spacing:.14em;color:var(--muted)}
 
 /* ============================ TRADE FOCUSED ============================ */
-.trade{position:relative;display:grid;grid-template-columns:1.15fr .95fr .9fr;align-items:center;
-  gap:0;padding:0 240px 0 0;border-bottom:1px solid var(--line);overflow:hidden;
-  background:radial-gradient(120% 120% at 85% 30%,#141518,#070809 70%)}
-.trade-van{padding:28px 0 28px 0}
-.trade-van img{width:100%;object-fit:contain}
+.trade{position:relative;display:grid;grid-template-columns:1.35fr .85fr .75fr;align-items:center;
+  gap:0;padding:0 var(--edge) 0 0;border-bottom:1px solid var(--line);overflow:hidden;
+  background:radial-gradient(120% 120% at 20% 40%,#141518,#070809 70%)}
+.trade-van{padding:18px 0 18px 0;min-height:320px}
+.trade-van img{width:100%;height:100%;max-height:420px;object-fit:contain;object-position:left center;
+  filter:drop-shadow(0 28px 40px rgba(0,0,0,.55))}
 .trade-copy{padding:44px 30px}
 .trade-copy h2{font-size:1.9rem;font-weight:900}
 .trade-copy h2 b{color:var(--red)}
 .trade-copy p{color:var(--muted);font-size:.82rem;margin:12px 0 22px;max-width:280px}
-.trade-list{list-style:none;margin:0;padding:44px 20px;position:relative;z-index:2}
+.trade-list{list-style:none;margin:0;padding:44px 10px 44px 0;position:relative;z-index:2}
 .trade-list li{display:flex;align-items:center;gap:12px;margin:16px 0;font-size:.78rem;color:#d8dadd}
-.trade-list svg{width:20px;height:20px;flex:none;fill:none;stroke:var(--red);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.trade-cartridge{position:absolute;right:14px;bottom:0;width:210px;pointer-events:none;opacity:.96;z-index:1}
-.trade-cartridge img{width:100%}
+.trade-list li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--red);flex:none}
 
 /* ============================ TECHNICAL ============================ */
 .technical{padding:40px var(--edge)}
@@ -219,11 +217,11 @@ header nav a.active::after{content:"";position:absolute;left:0;right:0;bottom:-2
   header nav{display:none}
   .trade-btn{padding:10px 14px;font-size:.55rem}
 
-  /* HERO — copy first, then a big full-bleed product stage */
+  /* HERO — copy first, then a big product stage */
   .hero{grid-template-columns:1fr;min-height:0}
   .hero-copy{order:1;padding:44px var(--edge) 8px}
-  .hero-stage{order:2;height:auto;padding:0 0 10px}
-  .hero-stage img{max-height:none;width:112%;margin-left:-6%}
+  .hero-stage{order:2;min-height:0;height:auto;padding:8px var(--edge) 18px}
+  .hero-stage img{max-height:420px;width:100%;margin:0}
   .hero h1{font-size:2.7rem}
   .hero-mark{font-size:3.2rem}
   .benefits{grid-template-columns:1fr 1fr;gap:16px}
@@ -250,12 +248,12 @@ header nav a.active::after{content:"";position:absolute;left:0;right:0;bottom:-2
   .why-quote{order:3;padding:40px var(--edge)}
   .why-quote p{font-size:1.3rem}
 
-  /* TRADE — van banner, copy, list; floating cartridge tucked corner */
+  /* TRADE — van banner, copy, list */
   .trade{grid-template-columns:1fr;padding:0 0 40px}
-  .trade-van{padding:20px var(--edge) 0}
+  .trade-van{padding:20px var(--edge) 0;min-height:0}
+  .trade-van img{max-height:280px;object-position:center}
   .trade-copy{padding:26px var(--edge) 6px}
   .trade-list{padding:6px var(--edge) 0;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px}
-  .trade-cartridge{width:120px;opacity:.85}
 
   /* TECHNICAL */
   .tech-cards{grid-template-columns:1fr 1fr}
