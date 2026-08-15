@@ -1,0 +1,26 @@
+/* Interaction polish layered over the existing visual system. */
+.mobile-menu-toggle{display:none}
+.mobile-nav{display:none}
+.product-body a[aria-disabled="true"],.tech-card[aria-disabled="true"],.pill[aria-disabled="true"]{opacity:.72;cursor:default}
+.product-body a[aria-disabled="true"] span,.pill[aria-disabled="true"] span{display:none}
+.product-body a[aria-disabled="true"]::after,.tech-card[aria-disabled="true"]::after,.pill[aria-disabled="true"]::after{content:"COMING SOON";margin-left:.55em;font-size:.5rem;letter-spacing:.08em;color:var(--muted-2)}
+.brand-proof{position:relative;margin:0;padding:56px 34px;background:radial-gradient(120% 100% at 0 40%,#1c1e21,#0a0b0d 70%);display:flex;flex-direction:column;justify-content:center}
+.brand-proof .proof-kicker{font-size:.58rem;font-weight:800;letter-spacing:.14em;color:var(--red);text-transform:uppercase}
+.brand-proof p{font-size:1.35rem;font-weight:800;letter-spacing:-.02em;margin:12px 0 0;max-width:340px}
+.brand-proof small{margin-top:18px;color:var(--muted);font-size:.66rem;line-height:1.55}
+@media(max-width:760px){
+  header{grid-template-columns:auto 1fr auto;gap:10px}
+  header .trade-btn{display:none}
+  .mobile-menu-toggle{display:grid;place-items:center;justify-self:end;width:42px;height:42px;border:1px solid var(--line);background:#0b0c0e;color:#fff;padding:0;cursor:pointer}
+  .mobile-menu-toggle span,.mobile-menu-toggle::before,.mobile-menu-toggle::after{content:"";display:block;width:18px;height:2px;background:currentColor;transition:.2s}
+  .mobile-menu-toggle span{margin:4px 0}
+  .mobile-menu-toggle[aria-expanded="true"] span{opacity:0}
+  .mobile-menu-toggle[aria-expanded="true"]::before{transform:translateY(6px) rotate(45deg)}
+  .mobile-menu-toggle[aria-expanded="true"]::after{transform:translateY(-6px) rotate(-45deg)}
+  .mobile-nav{position:fixed;inset:66px 0 auto 0;z-index:35;display:grid;grid-template-columns:1fr;background:rgba(6,7,9,.98);border-bottom:1px solid var(--line);padding:14px var(--edge) 20px;transform:translateY(-130%);opacity:0;pointer-events:none;transition:.22s}
+  .mobile-nav.open{transform:translateY(0);opacity:1;pointer-events:auto}
+  .mobile-nav a{padding:13px 0;border-bottom:1px solid var(--line-soft);text-transform:uppercase;font-size:.68rem;font-weight:700;letter-spacing:.12em;color:#d6d8dc}
+  .mobile-nav a:last-child{border:1px solid var(--red);margin-top:14px;padding:13px;text-align:center;color:#fff}
+  .brand-proof{padding:40px var(--edge)}
+  .brand-proof p{font-size:1.2rem}
+}
